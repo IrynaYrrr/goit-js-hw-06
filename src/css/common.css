@@ -28,7 +28,24 @@ img {
   height: 200px;
 }
 
+li {
+  list-style-type: none;
+}
+
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  align-self: flex-start;
+}
+
+.second {
+  align-self: center;
+}
+
+.third {
+  align-self: flex-end;
 }
