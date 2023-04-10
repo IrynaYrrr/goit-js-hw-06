@@ -12,6 +12,6 @@ function handleSubmit(evt) {
     return alert("Все поля должны быть заполнены!");
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log({email:email.value, password:password.value});
   evt.currentTarget.reset();
 }
