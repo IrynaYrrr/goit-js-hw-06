@@ -20,7 +20,7 @@ const container = document.querySelector('#ingredients');
 ingredients.forEach(item => {
   const list = document.createElement('li');
   list.textContent = item;
-  list.classList.add(item);
+  list.classList.add('item');
   container.append(list);
   return list;
 });
