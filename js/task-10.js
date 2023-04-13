@@ -27,6 +27,7 @@ function createBoxes(amount) {
 
     const allDivs = document.querySelectorAll('.box');
     const lastDiv = allDivs[allDivs.length - 1];
+
     if (lastDiv) {
       const size = Number(lastDiv.style.width.replace('px', '')) + 10;
       divBox.style.width = `${size}px`;
