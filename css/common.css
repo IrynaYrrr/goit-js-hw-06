@@ -49,3 +49,10 @@ li {
 .third {
   align-self: flex-end;
 }
+
+.box {
+  padding: 8px;
+  border-width: 2px;
+  border-style: solid;
+  color: black;
+}
