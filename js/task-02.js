@@ -17,12 +17,11 @@ const ingredients = [
 
 const container = document.querySelector('#ingredients');
 
-ingredients.forEach(item => {
-  const list = document.createElement('li');
-  list.textContent = item;
-  list.classList.add('item');
-  container.append(list);
-  return list;
+const result = ingredients.map(item => {
+  const ingredient = document.createElement('li');
+  ingredient.textContent = item;
+  ingredient.classList.add('item');
+  return ingredient;
 });
 
-console.dir(container);
+container.append(...result);
